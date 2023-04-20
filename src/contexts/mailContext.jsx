@@ -106,10 +106,10 @@ export const MailProvider = ({children}) => {
       },[])
 
       const read = mailItems.reduce((acc,curr) => acc + curr.read, 0)
-      console.log(read);
+      
 
       const unread = mailItems.reduce((acc,curr) => acc + (!curr.read), 0)
-      console.log(unread);
+      
 
       const redBtnHandler = (id) => {
         const updatedMailItems = mailItems.map((item)=>{

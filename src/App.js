@@ -5,6 +5,7 @@ import './others/App.css';
 import { Home } from './pages/Home';
 import { Inbox } from './pages/Inbox';
 import { Sent } from './pages/Sent';
+import { DetailedMail } from './pages/DetailedMail';
 
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
           <Route path = "/" element={<Home/>}/>
           <Route path = "/inbox" element={<Inbox/>}/>
           <Route path = "/sent" element={<Sent/>}/>
+          <Route path = "/details/:mailId" element={<DetailedMail/>}/>
         </Routes>
 
     </div>
